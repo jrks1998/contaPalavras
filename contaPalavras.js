@@ -1,11 +1,8 @@
-function contaPalavras {
-  var string="string";
-  var i = 0;
-  var frase = new Array();
-
-  for ( i=0; i < string.length ; i++ )
-  frase[i] = string.split(' ').length;
-
+const contaPalavras = function(frase) {
+  return frase.split(' ').length
 }
 
-module.exports = { contaPalavras };
+contaPalavras("vamo pra frente");
+contaPalavras("para raaaa pa");
+
+module.exports = { contaPalavras }
